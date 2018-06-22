@@ -12,4 +12,8 @@ export class AdminMainPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  asd(){
+    console.log('asd')
+  }
+
 }

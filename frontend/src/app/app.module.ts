@@ -1,8 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
+//Meterial Imports
+import { 
+  MatButtonModule, 
+  MatCheckboxModule, 
+  MatGridListModule, 
+  MatToolbarModule,
+  MatSidenavModule,
+
+} from '@angular/material';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -10,6 +20,7 @@ import { AdminMainPageComponent } from './views/admin/admin-main-page/admin-main
 import { AdminAddSubjectComponent } from './views/admin/admin-add-subject/admin-add-subject.component';
 import { AdminAddExamComponent } from './views/admin/admin-add-exam/admin-add-exam.component';
 import { LandingComponent } from './views/landing/landing.component';
+import { HeaderComponent } from './views/UI components/header/header.component';
 
 
 const routes: Routes = [
@@ -30,7 +41,8 @@ const routes: Routes = [
     AdminMainPageComponent,
     AdminAddSubjectComponent,
     AdminAddExamComponent,
-    LandingComponent
+    LandingComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +50,11 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatSidenavModule,
+    MatGridListModule,
+    MatToolbarModule,
+    NoopAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
