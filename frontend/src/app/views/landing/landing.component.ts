@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-landing',
@@ -12,4 +13,8 @@ export class LandingComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  check_login(loginForm:NgForm){
+    console.log(loginForm.value)
+  }
 }

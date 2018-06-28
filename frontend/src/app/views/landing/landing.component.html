@@ -1,0 +1,68 @@
+<div class="UCSC_logo">
+	<img src="../../../assets/images/UCSC_logo.png" width="300px" height="300px" class="UCSC_logo">
+</div>
+
+<div class="jumbotron col-md-11">
+	
+		<h1>Welcome to UCSC Exam Portal</h1>
+		<p>Online Examination Management System</p>
+		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<hr class="my-4">
+		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+			Sign-in & Continue
+		</button>
+		<div>
+			Don't have an Account? 
+			<a href="/reg">Sign-Up</a>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="loginModalLabel">Login - UCSC Exam Portal</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form #loginForm="ngForm" (ngSubmit)="check_login(loginForm)">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Please Enter your credentials</div>
+								<div class="panel-body">
+
+									<div class="form-group">
+										<label for="username">Username :</label>
+										<div>
+											<input class="form-control" type="text" [(ngModel)]="username" name="username">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="password">Password :</label>
+										<div>
+											<input class="form-control" type="password" [(ngModel)]="password" name="password">
+										</div>
+									</div>
+								</div>
+
+								<div class="panel-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="submit" class="btn btn-primary">Login</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+
+</div>

@@ -1,0 +1,14 @@
+.jumbotron{
+    height: 100%;
+    color: bisque;
+    background-color: rgb(31, 79, 133);
+
+}
+
+.UCSC_logo{
+    padding: 20px;
+    align-items: center;
+}
+.modal-content{
+    color: black
+}
